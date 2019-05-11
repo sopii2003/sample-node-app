@@ -16,7 +16,7 @@ pkg_name=sample-node-app
 pkg_origin=sopii2003-hablearning  
 pkg_version="1.2.0"
 pkg_scaffolding="core/scaffolding-node"
-pkg_deps=(core/node)
+#pkg_deps=(core/node)
 
 declare -A scaffolding_env
 
