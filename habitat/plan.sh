@@ -13,9 +13,15 @@
 # visit the Habitat Builder depot at https://bldr.habitat.sh/#/pkgs.
 
 pkg_name=sample-node-app
-pkg_origin=your_origin
-pkg_version="1.1.0"
+pkg_origin=sopii2003-hablearning  
+pkg_version="1.2.0"
+pkg_scaffolding="core/scaffolding-node"
 pkg_deps=(core/node)
+
+declare -A scaffolding_env
+
+# define path to config file
+scaffolding_env[APP_CONFIG]="{{pkg.svc_config_path}}/config.json"
 
 # Habitat provides you with a number of built-in "callbacks" to use
 # in the course of your build, all of which are explained in the docs
